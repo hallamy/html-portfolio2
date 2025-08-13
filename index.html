@@ -1,34 +1,67 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Hall</title>
-</head>
-<body>
-    <h1>Amy Hall's Portfolio</h1>
-    <h2>I'm learning front end development</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Best Movies</a><br /></h3>
-    <img src="./assets/images/AmysFavoriteMovies.png" />
-    <br /><br /><br />
-    <h3><a href="./public/birthday-invite.html">Birthday Invitation</a><br /></h3>
-    <img src="./assets/images/AddiesBday.png" /><br />
-    <a href="./public/about.html">About Me</a><br />
-    <a href="./public/contact.html">Contact Me</a>
-</body>
-</html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+    <title>Document</title>
+  <style>
+    h1{
+      font-family: "Libre Baskerville", serif;
+      font-weight: 200;
+      font-style: normal;
+      color: white;
+      text-align: center;
+      font-size: medium;
+      text-transform: uppercase;
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    }
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+    *{
+      background-color: black;
+    }
 
-<!-- TODO 5: Add a link to the project pages -->
+    img{
+      border: 5px solid white;
+      align-items: center;  
+      width: 100%;    
+    }
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+    p{
+      color: white;
+      text-align: center;
+      font-size: small;
+    }
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+    div{
+      width:50%;
+      margin-left: 25%;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <img src="./assets/images/daenerys.jpeg" />
+      <h1>That Special Moment</h1>
+      <p>When you find the perfect avacado at the supermarket</p>
+    </div>
+  </body>
+  </html>
